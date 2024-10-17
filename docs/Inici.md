@@ -1,1 +1,0 @@
-# Benvingut a la meva pàgina sòc Guillem :)
