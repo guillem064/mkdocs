@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>S.I. Guillem</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sprint_1";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> S.I. Guillem
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Inici/">Inici</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Sprint_1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installacio-so-ubuntu-24">Instal·lació SO Ubuntu 24</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aqui-posarem-el-nom-el-tipus-de-so-i-la-versio-que-volem">Aqui posarem el nom, el tipus de SO i la versió que volem.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#posem-la-memoria-que-creiem-necesaria">Posem la memòria que creiem necesaria.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#podem-ampliar-la-capacitat-de-la-nostra-maquina-si-volem">Podem ampliar la capacitat de la nostra màquina si volem.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#una-vegada-dintre-fiquem-la-iso-de-ubuntu-desktop-24">Una vegada dintre fiquem la ISO de ubuntu desktop 24.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cliquem-a-installar-ubuntu">Cliquem a instal·lar ubuntu.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#seguidament-triarem-les-opcions-personals-que-mes-ens-agradi-o-sajustin-a-nosaltres">Seguidament triarem les opcions personals que més ens agradi o s'ajustin a nosaltres.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installem-el-sistema-dubuntu">Instal·lem el sistema d'ubuntu.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#volem-que-sigui-una-installacio-interactiva">Volem que sigui una instal·lació interactiva.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#desisio-personal-recomano-la-predeterminada">Desisió personal (recomano la predeterminada).</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ara-per-a-fer-les-particions-que-volem-cliquem-a-alguna-altra-cosa">Ara per a fer les particions que volem cliquem a alguna altra cosa.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ara-creem-una-nova-particio">Ara creem una nova partició.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#li-donem-la-memoria-que-volem-tindre-perque-esta-sera-una-particio-swap-que-es-la-particio-per-a-tindre-un-extra-de-ram-per-a-la-instalacio">Li donem la memoria que volem tindre perque esta sera una partició swap, que es la particio per a tindre un extra de RAM per a la instalació.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#per-a-la-particio-home-li-posarem-lespai-per-les-nostres-homes-o-usuaris-varia-segons-el-que-volem">Per a la partició Home li posarem l'espai per les nostres homes o usuaris varia segons el que volem.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#i-per-acabar-amb-les-particions-la-root-que-li-donarem-la-memoria-restan">I per acabar amb les particions la root que li donarem la memoria restan.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aqui-es-pot-observar-com-quedara">Aqui es pot observar com quedara.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comprovem-que-ho-tenim-tot-en-ordre">Comprovem que ho tenim tot en ordre.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#i-ja-tendries-la-teva-maquina-dubuntu-24-desktop-amb-particions-fetes">I ja tendries la teva màquina d'ubuntu 24 Desktop amb particions fetes!!</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuracio-xarxa">Configuració xarxa</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#per-a-comencar-la-nostra-maquina-tindra-xarxa-nat">per a començar la nostra màquina tindra Xarxa NAT.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#si-activem-el-dhcp-no-haurem-de-canviar-res">Si activem el DHCP no haurem de canviar res.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#i-si-volem-manual-haurem-de-posar-la-configuracio-de-xarxa">I si volem manual haurem de posar la configuració de xarxa.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#per-a-comprobar-que-sha-canviat-fem-ip-a-i-mirem-la-ip-que-sigui-la-correcta">Per a comprobar que s'ha canviat fem ip a i mirem la ip que sigui la correcta.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#i-ara-per-canviar-ho-manualment-entrarem-al-netplan">I ara per canviar-ho manualment entrarem al netplan.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#el-canviarem-per-a-que-quedi-aixi">El canviarem per a que quedi així.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#farem-un-netplan-apply-per-a-guardar">Farem un netplan apply per a guardar.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#farem-ping-per-a-comprovar-que-tot-funcioni">Farem ping per a comprovar que tot funcioni.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#punts-de-restauracio">Punts de restauració</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installem-el-timeshift">Instal·lem el timeshift</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ara-que-ja-tenim-el-timeshift-installat-clicarem-a-fer-la-instantania-al-boto-de-crear">Ara que ja tenim el timeshift instal·lat clicarem a fer la instantània al botò de crear.</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#grub">GRUB</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mirem-que-tenim-grub">Mirem que tenim grub</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#eliminem-la-grub">Eliminem la grub</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mirem-que-no-tenim-grub">Mirem que no tenim grub</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#anirem-a-parametres">Anirem a parametres</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#en-lapartat-de-emmagatzematje">En l'apartat de emmagatzematje</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#obrim-des-de-una-nova-iso">Obrim des de una nova ISO</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#entrem-a-la-maquina">Entrem a la màquina</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iniciarem-la-reparacio-recomanada">Iniciarem la reparació recomanada.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#una-vegada-reparada-ja-podriem-tancar-la-maquina-i-tornar-a-obrir-la">Una vegada reparada ja podriem tancar la maquina i tornar a obrir-la.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#obrim-la-maquina-normal">Obrim la màquina normal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#i-al-entrar-a-la-carpeta-boot-podem-veure-que-sha-creat-la-grub">I al entrar a la carpeta boot podem veure que s'ha creat la grub.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#la-tornem-a-borrar">La tornem a borrar</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tornem-a-posar-desde-parametres-laltra-iso-de-recuperacio-de-grub">Tornem a posar desde parametres l'altra ISO de recuperació de GRUB.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#al-obrir-ens-mostrara-aquesta-pantalla-seleccionarem-arranque-manual">Al obrir ens mostrara aquesta pantalla, seleccionarem Arranque manual.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#anem-a-sistemas-operativos">Anem a Sistemas Operativos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#seleccionem-linux">Seleccionem Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ara-tanquem-la-maquina-i-tornem-a-obrir-treient-la-iso-i-deixant-lapartat-demmagatzematje-buit">Ara tanquem la maquina i tornem a obrir treient la ISO I deixant l'apartat d'emmagatzematje buit.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#al-entrar-entrarem-al-directori-boot">Al entrar entrarem al directori boot.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#posarem-les-comandes-per-tornar-a-installar-la-grub">Posarem les comandes per tornar a instal·lar la GRUB.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fem-una-update-a-la-grub-per-acaba-de-recuperar-la">Fem una update a la GRUB per acaba de recuperar-la.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ara-fem-un-ls-i-ja-la-tindrem">Ara fem un ls i ja la tindrem.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalacio-virtual-daplicacions">Instalació virtual d'aplicacións</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index2/">Sprint_2</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Sprint3/">Sprint_3</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">S.I. Guillem</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Sprint_1</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sprint-1">Sprint 1</h1>
+<h2 id="installacio-so-ubuntu-24"><strong>Instal·lació SO Ubuntu 24</strong></h2>
+<h5 id="aqui-posarem-el-nom-el-tipus-de-so-i-la-versio-que-volem">Aqui posarem el nom, el tipus de SO i la versió que volem.</h5>
+<p><img alt="captura de pantalla1" src="img/2.png" /></p>
+<h5 id="posem-la-memoria-que-creiem-necesaria">Posem la memòria que creiem necesaria.</h5>
+<p><img alt="captura de pantalla1" src="img/3.png" /></p>
+<h5 id="podem-ampliar-la-capacitat-de-la-nostra-maquina-si-volem">Podem ampliar la capacitat de la nostra màquina si volem.</h5>
+<p><img alt="captura de pantalla1" src="img/4.png" /></p>
+<h5 id="una-vegada-dintre-fiquem-la-iso-de-ubuntu-desktop-24">Una vegada dintre fiquem la ISO de ubuntu desktop 24.</h5>
+<p><img alt="captura de pantalla1" src="img/5.png" /></p>
+<h5 id="cliquem-a-installar-ubuntu">Cliquem a instal·lar ubuntu.</h5>
+<p><img alt="captura de pantalla1" src="img/6.png" /></p>
+<h5 id="seguidament-triarem-les-opcions-personals-que-mes-ens-agradi-o-sajustin-a-nosaltres">Seguidament triarem les opcions personals que més ens agradi o s'ajustin a nosaltres.</h5>
+<p><img alt="captura de pantalla1" src="img/7.png" /></p>
+<p><img alt="captura de pantalla1" src="img/8.png" /></p>
+<h5 id="installem-el-sistema-dubuntu">Instal·lem el sistema d'ubuntu.</h5>
+<p><img alt="captura de pantalla1" src="img/9.png" /></p>
+<h5 id="volem-que-sigui-una-installacio-interactiva">Volem que sigui una instal·lació interactiva.</h5>
+<p><img alt="captura de pantalla1" src="img/10.png" /></p>
+<h5 id="desisio-personal-recomano-la-predeterminada">Desisió personal (recomano la predeterminada).</h5>
+<p><img alt="captura de pantalla1" src="img/11.png" /></p>
+<h5 id="ara-per-a-fer-les-particions-que-volem-cliquem-a-alguna-altra-cosa">Ara per a fer les particions que volem cliquem a alguna altra cosa.</h5>
+<p><img alt="captura de pantalla1" src="img/12.png" /></p>
+<h5 id="ara-creem-una-nova-particio">Ara creem una nova partició.</h5>
+<p><img alt="captura de pantalla1" src="img/13.png" /></p>
+<h5 id="li-donem-la-memoria-que-volem-tindre-perque-esta-sera-una-particio-swap-que-es-la-particio-per-a-tindre-un-extra-de-ram-per-a-la-instalacio">Li donem la memoria que volem tindre perque esta sera una partició swap, que es la particio per a tindre un extra de RAM per a la instalació.</h5>
+<p><img alt="captura de pantalla1" src="img/14.png" /></p>
+<h5 id="per-a-la-particio-home-li-posarem-lespai-per-les-nostres-homes-o-usuaris-varia-segons-el-que-volem">Per a la partició Home li posarem l'espai per les nostres homes o usuaris varia segons el que volem.</h5>
+<p><img alt="captura de pantalla1" src="img/Captura%20de%20pantalla%20de%202024-09-20%2012-30-10.png" /></p>
+<h5 id="i-per-acabar-amb-les-particions-la-root-que-li-donarem-la-memoria-restan">I per acabar amb les particions la root que li donarem la memoria restan.</h5>
+<p><img alt="captura de pantalla1" src="img/15.png" /></p>
+<h5 id="aqui-es-pot-observar-com-quedara">Aqui es pot observar com quedara.</h5>
+<p><img alt="captura de pantalla1" src="img/Captura%20de%20pantalla%20de%202024-09-20%2012-31-25.png" /></p>
+<h5 id="comprovem-que-ho-tenim-tot-en-ordre">Comprovem que ho tenim tot en ordre.</h5>
+<p><img alt="captura de pantalla1" src="img/Captura%20de%20pantalla%20de%202024-09-20%2012-33-48.png" /></p>
+<h5 id="i-ja-tendries-la-teva-maquina-dubuntu-24-desktop-amb-particions-fetes">I ja tendries la teva màquina d'ubuntu 24 Desktop amb particions fetes!!</h5>
+<p><img alt="captura de pantalla1" src="img/Captura%20de%20pantalla%20de%202024-09-20%2013-11-10.png" /></p>
+<h2 id="configuracio-xarxa">Configuració xarxa</h2>
+<h5 id="per-a-comencar-la-nostra-maquina-tindra-xarxa-nat">per a començar la nostra màquina tindra Xarxa NAT.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/1.png" /></p>
+<h5 id="si-activem-el-dhcp-no-haurem-de-canviar-res">Si activem el DHCP no haurem de canviar res.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-02-04.png" /></p>
+<h5 id="i-si-volem-manual-haurem-de-posar-la-configuracio-de-xarxa">I si volem manual haurem de posar la configuració de xarxa.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-02-13.png" /></p>
+<h5 id="per-a-comprobar-que-sha-canviat-fem-ip-a-i-mirem-la-ip-que-sigui-la-correcta">Per a comprobar que s'ha canviat fem ip a i mirem la ip que sigui la correcta.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-11-13.png" /></p>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-11-40.png" /></p>
+<h5 id="i-ara-per-canviar-ho-manualment-entrarem-al-netplan">I ara per canviar-ho manualment entrarem al netplan.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-10-46.png" /></p>
+<h5 id="el-canviarem-per-a-que-quedi-aixi">El canviarem per a que quedi així.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-09-14.png" /></p>
+<h5 id="farem-un-netplan-apply-per-a-guardar">Farem un netplan apply per a guardar.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-10-08.png" /></p>
+<h5 id="farem-ping-per-a-comprovar-que-tot-funcioni">Farem ping per a comprovar que tot funcioni.</h5>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-11-57.png" /></p>
+<p><img alt="captura de pantalla de xarxa" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-12-13.png" /></p>
+<h2 id="punts-de-restauracio">Punts de restauració</h2>
+<h5 id="installem-el-timeshift">Instal·lem el timeshift</h5>
+<p><img alt="captura de pantalla de backsave" src="./img/Captura de pantalla de 2024-09-24 12-21-41.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-23-26.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-24-35.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-25-06.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-26-29.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-26-41.png" /></p>
+<h6 id="ara-que-ja-tenim-el-timeshift-installat-clicarem-a-fer-la-instantania-al-boto-de-crear">Ara que ja tenim el timeshift instal·lat clicarem a fer la instantània al botò de crear.</h6>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-26-58.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-28-08.png" /></p>
+<p><img alt="captura de pantalla de backsave" src="img/Captura%20de%20pantalla%20de%202024-09-24%2012-27-38.png" /></p>
+<h2 id="grub">GRUB</h2>
+<h5 id="mirem-que-tenim-grub">Mirem que tenim grub</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-18-30.png" /></p>
+<h5 id="eliminem-la-grub">Eliminem la grub</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-18-55.png" /></p>
+<h5 id="mirem-que-no-tenim-grub">Mirem que no tenim grub</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-19-11.png" /></p>
+<h5 id="anirem-a-parametres">Anirem a parametres</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-02%2008-30-02.png" /></p>
+<h5 id="en-lapartat-de-emmagatzematje">En l'apartat de emmagatzematje</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-12-12.png" /></p>
+<h5 id="obrim-des-de-una-nova-iso">Obrim des de una nova ISO</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-12-53.png" /></p>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-02%2008-31-25.png" /></p>
+<h5 id="entrem-a-la-maquina">Entrem a la màquina</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-13-21.png" /></p>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-14-27.png" /></p>
+<h5 id="iniciarem-la-reparacio-recomanada">Iniciarem la reparació recomanada.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-15-13.png" /></p>
+<h5 id="una-vegada-reparada-ja-podriem-tancar-la-maquina-i-tornar-a-obrir-la">Una vegada reparada ja podriem tancar la maquina i tornar a obrir-la.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-16-01.png" /></p>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-16-44.png" /></p>
+<h5 id="obrim-la-maquina-normal">Obrim la màquina normal</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-17-29.png" /></p>
+<h5 id="i-al-entrar-a-la-carpeta-boot-podem-veure-que-sha-creat-la-grub">I al entrar a la carpeta boot podem veure que s'ha creat la grub.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-18-30.png" /></p>
+<h5 id="la-tornem-a-borrar">La tornem a borrar</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-18-55.png" /></p>
+<h5 id="tornem-a-posar-desde-parametres-laltra-iso-de-recuperacio-de-grub">Tornem a posar desde parametres l'altra ISO de recuperació de GRUB.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-24-45.png" /></p>
+<h5 id="al-obrir-ens-mostrara-aquesta-pantalla-seleccionarem-arranque-manual">Al obrir ens mostrara aquesta pantalla, seleccionarem Arranque manual.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-41-45.png" /></p>
+<h5 id="anem-a-sistemas-operativos">Anem a Sistemas Operativos</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-41-49.png" /></p>
+<h5 id="seleccionem-linux">Seleccionem Linux</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-41-55.png" /></p>
+<h5 id="ara-tanquem-la-maquina-i-tornem-a-obrir-treient-la-iso-i-deixant-lapartat-demmagatzematje-buit">Ara tanquem la maquina i tornem a obrir treient la ISO I deixant l'apartat d'emmagatzematje buit.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-12-12.png" /></p>
+<h5 id="al-entrar-entrarem-al-directori-boot">Al entrar entrarem al directori boot.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-43-54.png" /></p>
+<h5 id="posarem-les-comandes-per-tornar-a-installar-la-grub">Posarem les comandes per tornar a instal·lar la GRUB.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-44-18.png" /></p>
+<h5 id="fem-una-update-a-la-grub-per-acaba-de-recuperar-la">Fem una update a la GRUB per acaba de recuperar-la.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-45-02.png" /></p>
+<h5 id="ara-fem-un-ls-i-ja-la-tindrem">Ara fem un ls i ja la tindrem.</h5>
+<p><img alt="captura de pantalla de grub" src="img/Captura%20de%20pantalla%20de%202024-10-01%2012-45-20.png" /></p>
+<h2 id="instalacio-virtual-daplicacions">Instalació virtual d'aplicacións</h2>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-05-44.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-07-24.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-08-52.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-09-56.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-10-24.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-11-48.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-13-04.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-13-15.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-36-27.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-38-17.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-40-23.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-41-42.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-44-04.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-46-47.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-50-45.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-51-45.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-10%2012-51-45.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2008-52-27.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2009-01-05.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2009-10-14.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2009-48-16.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2010-13-02.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-39-02.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-40-48.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-41-40.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-43-35.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-44-58.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-47-18.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-49-22.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/Captura%20de%20pantalla%20de%202024-10-15%2011-49-08.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/100.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/101.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/102.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/103.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/104.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/105.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/106.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/107.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/108.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/109.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/110.png" /></p>
+<p><img alt="captura de pantalla de instalació" src="img/111.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="Inici/" class="btn btn-neutral float-left" title="Inici"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="index2/" class="btn btn-neutral float-right" title="Sprint_2">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="Inici/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="index2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2025-01-30 11:12:24.253088+00:00
+-->
